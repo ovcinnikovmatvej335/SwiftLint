@@ -1,0 +1,9 @@
+                if x > 3 && x < 8 {
+                    self.boolThroughPublisher.send(true)
+                    self.passThroughPublisher3.send(282)
+                } else {
+                    self.boolThroughPublisher.send(false)
+                }
+
+                if x == items2.indices.last {
+                    self.passThroughPublisher2.send(completion: .finished)
